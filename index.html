@@ -18,7 +18,7 @@
     <h1>Cindy Cui</h1>
     <p class="tagline">Economist and science leader working on causal inference, experimentation, and marketplace design.</p>
     <p class="links">
-      <span class="email">cindycuican@gmail.com</span>
+      <button class="reveal-email" data-user="cindycuican" data-domain="gmail.com" type="button">Show email</button>
       <a href="https://www.linkedin.com/in/cancui/">LinkedIn</a>
       <a href="https://github.com/cindyccui">GitHub</a>
     </p>
@@ -67,7 +67,7 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>The best way to reach me is by email: cindycuican@gmail.com. I&rsquo;m also on <a href="https://www.linkedin.com/in/cancui/">LinkedIn</a>.</p>
+    <p>The best way to reach me is by email: <button class="reveal-email" data-user="cindycuican" data-domain="gmail.com" type="button">show email</button>. I&rsquo;m also on <a href="https://www.linkedin.com/in/cancui/">LinkedIn</a>.</p>
   </section>
 
 </main>
@@ -75,6 +75,18 @@
 <footer>
   <p>&copy; 2026 Cindy Cui</p>
 </footer>
+
+<script>
+document.querySelectorAll('.reveal-email').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var email = btn.dataset.user + '@' + btn.dataset.domain;
+    var span = document.createElement('span');
+    span.className = 'email';
+    span.textContent = email;
+    btn.replaceWith(span);
+  });
+});
+</script>
 
 </body>
 </html>

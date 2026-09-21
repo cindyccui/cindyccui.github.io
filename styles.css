@@ -66,6 +66,19 @@ h1 {
 
 .links .email { font-weight: 500; }
 
+.reveal-email {
+  font: inherit;
+  font-weight: 500;
+  color: var(--ink);
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 2px;
+  cursor: pointer;
+}
+
+.reveal-email:hover { color: var(--accent); border-color: var(--accent); }
+
 .location {
   color: var(--muted);
   font-size: 0.95rem;

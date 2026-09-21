@@ -30,5 +30,3 @@ git push -u origin main
 
 - Edit `index.html` for content (experience, projects, contact links).
 - Edit `styles.css` for colors and typography.
-- Replace `resume.pdf` with an updated résumé.
-- Update the GitHub link in the hero (currently points at `https://github.com/` as a placeholder).

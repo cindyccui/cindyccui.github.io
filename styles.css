@@ -64,6 +64,8 @@ h1 {
 
 .links a:hover { border-color: var(--accent); }
 
+.links .email { font-weight: 500; }
+
 .location {
   color: var(--muted);
   font-size: 0.95rem;

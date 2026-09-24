@@ -126,23 +126,29 @@ h2 {
 .pubs li { margin-bottom: 0.8rem; color: var(--muted); }
 .pubs li:last-child { margin-bottom: 0; }
 
-/* Projects placeholder */
-.placeholder {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1.75rem;
+/* Projects */
+.project { margin-bottom: 1.75rem; }
+.project:last-of-type { margin-bottom: 0; }
+
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.placeholder p { margin: 0.5rem 0; color: var(--muted); }
-.placeholder p:first-child {
-  margin-top: 0;
-  color: var(--ink);
+.project-head strong {
   font-family: var(--serif);
   font-weight: 600;
   font-size: 1.1rem;
+  letter-spacing: -0.01em;
 }
-.placeholder p:last-child { margin-bottom: 0; }
+
+.project-head span { color: var(--muted); font-size: 0.92rem; }
+
+.project p { margin: 0.3rem 0 0; color: var(--muted); }
+.project-link { margin-top: 0.5rem; }
 
 /* Email reveal button */
 .reveal-email {
